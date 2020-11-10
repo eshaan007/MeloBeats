@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/App.scss';
 
 import Player from './Components/Player';
 import Song from './Components/Song';
