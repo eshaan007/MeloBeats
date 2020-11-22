@@ -3,6 +3,7 @@ import './styles/App.scss';
 
 import Player from './Components/Player';
 import Song from './Components/Song';
+import Library from './Components/Library';
 import data from './data';
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
       <Player 
         setIsPlaying={setIsPlaying}
         isPlaying={isPlaying} 
-        currentSong={currentSong}/>
+        currentSong={currentSong}
+      />
+      <Library songs={songs}/>
     </div>
   );
 }
