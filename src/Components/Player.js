@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { 
     faPlay, 
@@ -16,8 +16,28 @@ const Player = ({
     setIsPlaying , 
     songs ,
     setCurrentSong,
+    setSongs,
     }) => {
     // state
+    //useEffect
+    useEffect(() => {
+        //add active state
+        const newSongs = songs.map((song) => {
+            if(song.id === currentSong.id){
+                return{
+                    ...song,
+                    active: true,
+                };
+            }else {
+            return{
+                ...song,
+                active: false,
+                };
+            }
+        });
+      setSongs(newSongs);
+    }, [currentSong]);
+
     //event handler
     const playSongHandler = () => {
         if (isPlaying) {
@@ -78,8 +98,6 @@ const Player = ({
                     icon={isPlaying ? faPause : faPlay} />
                 <FontAwesomeIcon onClick={() => skipTrackHandler('skip-forward')} className="skip-forward" size="2x" icon={faAngleRight} />
             </div>
-
-            
         </div>
     );
 }

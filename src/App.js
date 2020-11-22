@@ -44,6 +44,7 @@ const timeUpdateHandler = (e) => {
         songInfo={songInfo}
         songs = {songs}
         setCurrentSong = {setCurrentSong}
+        setSongs = {setSongs}
       />
 
       <Library 
