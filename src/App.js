@@ -5,6 +5,7 @@ import Player from './Components/Player';
 import Song from './Components/Song';
 import Library from './Components/Library';
 import data from './data';
+import Nav from './Components/Nav';
 
 function App() {
 
@@ -27,6 +28,7 @@ const timeUpdateHandler = (e) => {
   return (
     <div className="App">
       {/* <h1> MeloBeats </h1> */}
+      <Nav />
       <Song currentSong={currentSong}/>
       
       <Player 
@@ -43,6 +45,7 @@ const timeUpdateHandler = (e) => {
         songs={songs} 
         setCurrentSong={setCurrentSong} 
         isPlaying={isPlaying}
+        setSongs = {setSongs}
       />
       
       <audio 

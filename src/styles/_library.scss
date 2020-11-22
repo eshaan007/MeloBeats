@@ -6,6 +6,9 @@
     height: 100%;
     box-shadow: 2px 2px 50px rgb(206, 206, 206);
     overflow: scroll;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    opacity: 0;
     h2{
         padding: 2rem;
     }
@@ -55,3 +58,6 @@
     border: transparent;
 }
 
+.selected {
+    background: rgb(233, 226, 250);
+}
