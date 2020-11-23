@@ -1,4 +1,5 @@
 .library {
+    background-color: #FFFFFF;
     position: fixed;
     top: 0;
     left: 0;
@@ -15,7 +16,7 @@
 }
 
 .library-song {
-
+    background-color: #FFFFFF;
     display: flex;
     align-items: center;
     padding: 1rem 2rem 1rem 2rem;
@@ -30,6 +31,7 @@
 }
 
 .song-description {
+    // background-color: #FFFFFF;
     padding-left: 1rem;
     h3{
         font-size: 1rem;
@@ -63,6 +65,14 @@
 }
 
 .active-library {
+    // background-color: #FFFFFF;
     transform: translateX(0%);
     opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .library{
+        width: 100%;
+        // z-index: 10;
+    }
 }
