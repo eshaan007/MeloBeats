@@ -24,6 +24,22 @@ h3,h4 {
     margin-left: 20rem;
 }
 
+.footer{
+    font-weight: 600;
+    display:inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+
+    @media screen and (max-width: 768px) {
+        padding: 1rem;
+    }
+}
+
+.heart {
+    text-decoration: none;
+}
+
 @import "./song";
 @import "./player";
 @import "./library";

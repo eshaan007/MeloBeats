@@ -79,6 +79,7 @@ const songEndHandler = async () => {
         src={currentSong.audio}>
         onEnded={songEndHandler}
       </audio>
+      <h4 className="footer"> Made with <a className="heart" href=' '>❤️️</a> by EK </h4>
     </div>
   );
 }
