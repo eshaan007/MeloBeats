@@ -2,7 +2,7 @@
 <p align="center"><b>Enjoy the LoFi ChillHop Music 🎧</b></p>
 
 
-- Developed this Web-App to Enjoy Music. 
+- Developed this Responsive Web-App to Enjoy Music. 
 - Used ReactJS and Called in the Data from ChillHop. 
 - Beautified using SCSS Framework.
 - Deployed on Vercel.
