@@ -5,6 +5,7 @@
 - Developed this Web-App to Enjoy Music. 
 - Used ReactJS and Called in the Data from ChillHop. 
 - Beautified using SCSS Framework.
+- Deployed on Vercel.
 
 ### Installation Guide
 1. Open the Terminal/ Powershell on your PC.
