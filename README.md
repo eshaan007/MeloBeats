@@ -1,5 +1,6 @@
 <h1 align="center">MeloBeats</h1>
 <p align="center"><b>Enjoy the LoFi ChillHop Music 🎧</b></p>
+<p align="center"> Do ⭐ the Repo to Show Some Appreciation </a></p>
 
 
 - Developed this Responsive Web-App to Enjoy Music. 
@@ -17,5 +18,4 @@
 ##### The project has started on `localhost:3000` !!
 
 ---
-<p align="center"> Do ⭐ the Repo to Show Some ❤️ </a></p>
 <p align="center"> Made with ❤️ by <a href="https://eshaankhurana.com">Eshaan Khurana</a></p>
