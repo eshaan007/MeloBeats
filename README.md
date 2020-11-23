@@ -6,7 +6,7 @@
 - Developed this Responsive Web-App to Enjoy Music. 
 - Used ReactJS and Called in the Data from ChillHop. 
 - Beautified using SCSS Framework.
-- Deployed on Vercel.
+- Deployed The Website on Vercel ➡ https://melobeats.vercel.app/
 
 ### Installation Guide
 1. Open the Terminal/ Powershell on your PC.
