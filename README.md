@@ -17,4 +17,5 @@
 ##### The project has started on `localhost:3000` !!
 
 ---
+<p align="center"> Do ⭐ the Repo to Show Some ❤️ </a></p>
 <p align="center"> Made with ❤️ by <a href="https://eshaankhurana.com">Eshaan Khurana</a></p>
