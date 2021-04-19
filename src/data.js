@@ -3,6 +3,16 @@ import { v4 as uuidv4 } from "uuid";
 function data() {
   return [
     {
+      name: "Roses n Flames",
+      cover:
+        "https://chillhop.com/wp-content/uploads/2021/02/d12927eedcc2f5afba2ab049a4a1ea46c2266ae3-1024x1024.jpg",
+      artist: "C Y G N",
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=14984",
+      color: ["#5D8AC0", "#E999F7"],
+      id: uuidv4(),
+      active: true,
+    },
+    {
       name: "Beaver Creek",
       cover:
         "https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
@@ -10,7 +20,7 @@ function data() {
       audio: "https://mp3.chillhop.com/serve.php/?mp3=10075",
       color: ["#205950", "#2ab3bf"],
       id: uuidv4(),
-      active: true,
+      active: false,
     },
     {
       name: "Daylight",
