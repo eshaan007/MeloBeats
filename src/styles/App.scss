@@ -3,8 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1,h2,h3 {
+h1,h2 {
     color: rgb(54, 54, 54);
+}
+
+h1 {
+    font-size: 1rem;
 }
 
 body{
@@ -21,24 +25,24 @@ h3,h4 {
 }
 
 .library-active{
-    margin-left: 20rem;
+    margin-left: 30%;
 }
 
-.footer{
-    font-weight: 600;
-    display:inline-block;
-    width: 100%;
-    text-align: center;
-    padding: 2rem;
+// .footer{
+//     font-weight: 600;
+//     display:inline-block;
+//     width: 100%;
+//     text-align: center;
+//     padding: 2rem;
 
-    @media screen and (max-width: 768px) {
-        padding: 1rem;
-    }
-}
+//     @media screen and (max-width: 768px) {
+//         padding: 1rem;
+//     }
+// }
 
-.heart {
-    text-decoration: none;
-}
+// .heart {
+//     text-decoration: none;
+// }
 
 @import "./song";
 @import "./player";

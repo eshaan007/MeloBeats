@@ -1,11 +1,21 @@
 import React from 'react';
 
-const LibrarySong = ({ song, songs , setCurrentSong, id, audioRef, isPlaying, setSongs}) => {
+const LibrarySong = ({ 
+    name,
+    artist,
+    cover,
+    active,
+    songs , 
+    setCurrentSong, 
+    id, 
+    audioRef, 
+    isPlaying, 
+    setSongs
+}) => {
 
     const songSelectHandler = async () => {
         const selectedSong = songs.filter((state) => state.id === id);
-        await setCurrentSong(selectedSong[0]);
-        // setCurrentSong(song);
+        setCurrentSong({...selectedSong[0] });
         //add active state
         const newSongs = songs.map((song) => {
             if(song.id === id){
@@ -21,15 +31,18 @@ const LibrarySong = ({ song, songs , setCurrentSong, id, audioRef, isPlaying, se
             }
         });
         setSongs(newSongs);
-        //check if song is playing
-        if (isPlaying) audioRef.current.play();
+        //song is playing
+        playAudio(isPlaying, audioRef);
     };
     return(
-        <div onClick={songSelectHandler} className={`library-song ${song.active ? 'selected' : ""}`}>
-            <img alt={song.name} src={song.cover}/>
+        <div 
+            onClick={songSelectHandler} 
+            className={`library-song ${active ? 'selected' : ""}`}
+        >
+            <img src={cover} alt="" />
             <div className="song-description">
-                <h3> {song.name} </h3>
-                <h4> {song.artist} </h4>
+                <h3> {name} </h3>
+                <h4> {artist} </h4>
             </div>
         </div>
     );

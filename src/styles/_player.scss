@@ -9,9 +9,9 @@
 .time-control {
     width: 50%;
     display: flex;
+    align-items: center;
     input{
         width: 100%;
-        padding: 1rem 0rem;
         -webkit-appearance: none;
         background: transparent;
         cursor: pointer;
@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 40%;
     padding: 1rem;
     svg {
         cursor: pointer;
@@ -42,14 +42,14 @@ input[type="range"]::-webkit-slider-thumb {
 }
 input[type="range"]::-moz-slider-thumb {
     -webkit-appearance: none;
-    background: transparent;    width: 16px;
+    background: transparent;    
+    border: none;
 }
 
 .track {
     width: 100%;
     height: 1rem;
     position: relative;
-    margin-top: 1.1rem;
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -62,6 +62,7 @@ input[type="range"]::-moz-slider-thumb {
     top: 0;
     left: 0;
     transform: translateX(0%);
+    padding: 1rem;
     pointer-events: none;
 }
 
@@ -70,6 +71,6 @@ input[type="range"]::-moz-slider-thumb {
         width: 90%;
     }
     .play-control {
-        width: 60%;
+        width: 80%;
     }
 }
