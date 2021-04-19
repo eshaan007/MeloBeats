@@ -5,7 +5,7 @@ import {
     faAngleLeft, 
     faAngleRight,
     faPause,
-    faVolumeDown,
+    faVolumeDown
 } from "@fortawesome/free-solid-svg-icons";
 
 import { playAudio } from "../util";
@@ -19,7 +19,7 @@ const Player = ({
     setIsPlaying, 
     songs,
     setCurrentSong,
-    setSongs,
+    setSongs
     }) => {
     // state
     const [activeVolume, setActiveVolume] = useState(false);        
@@ -59,7 +59,7 @@ const Player = ({
 
     const dragHandler = (e) => {
         audioRef.current.currentTime = e.target.value;
-        setSongInfo({...songInfo, currentTime: e.target.value});
+        setSongInfo({ ...songInfo, currentTime: e.target.value });
     };
  
     const skipTrackHandler = async (direction) => {
@@ -80,7 +80,7 @@ const Player = ({
             await setCurrentSong(songs[(currentIndex - 1) % songs.length]);
             activeLibraryHandler(songs[(currentIndex - 1) % songs.length]);
         }
-        if (isPlaying) audioRef.current.play();
+        playAudio(isPlaying, audioRef);
     };
 
     const changeVolume = (e) => {
