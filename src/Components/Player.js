@@ -23,7 +23,7 @@ const Player = ({
     }) => {
     // state
     const [activeVolume, setActiveVolume] = useState(false);        
-    //useeffect updating
+
     const activeLibraryHandler = (nextPrev) => {
         const newSongs = songs.map((song) => {
             if(song.id === nextPrev.id){
@@ -33,18 +33,20 @@ const Player = ({
                 };
             } else {
               return {
-                ...song,
-                active: false,
+                    ...song,
+                    active: false,
                 };
             }
         });
       setSongs(newSongs);
     }
     //event handler
+
+    //Play Pause Functionality
     const playSongHandler = () => {
         if (isPlaying) {
             audioRef.current.pause();
-            setIsPlaying(!isPlaying);
+            setIsPlaying(!isPlaying); // On - Off
         } else {
             audioRef.current.play();
             setIsPlaying(!isPlaying);

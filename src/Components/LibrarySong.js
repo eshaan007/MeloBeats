@@ -16,8 +16,8 @@ const LibrarySong = ({
 
     const songSelectHandler = async () => {
         const selectedSong = songs.filter((state) => state.id === id);
-        setCurrentSong({...selectedSong[0] });
-        //add active state
+        setCurrentSong({...selectedSong[0]});  
+        //add active state (highlighted color in the library)
         const newSongs = songs.map((song) => {
             if(song.id === id){
                 return{

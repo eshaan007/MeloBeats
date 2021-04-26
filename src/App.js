@@ -5,7 +5,7 @@ import Player from './Components/Player';
 import Song from './Components/Song';
 import Library from './Components/Library';
 import Nav from './Components/Nav';
-// importing data
+// importing music
 import chillhop from './data';
 // util 
 import { playAudio } from './util';
@@ -41,11 +41,9 @@ const timeUpdateHandler = (e) => {
     volume: e.target.volume,
   });
 };
-
 const songEndHandler = async () => {
   let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
   await setCurrentSong(songs[(currentIndex + 1) % songs.length]);
-  // activeLibraryHandler(songs[(currentIndex + 1) % songs.length]);
   playAudio(isPlaying, audioRef);
 };
 
@@ -86,7 +84,7 @@ const songEndHandler = async () => {
         src={currentSong.audio}
         onEnded ={songEndHandler}
       ></audio>
-      {/* <h4 className="footer"> Made with <a className="heart" href=' '>❤️️</a> by EK </h4> */}
+      <h4 className="footer"> Made with <a className="heart" href=' '>❤️️</a> by EK </h4>
     </div>
   );
 };
